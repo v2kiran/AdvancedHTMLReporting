@@ -19,7 +19,7 @@ $indentationStyle = 'AllLevels'
 New-HtmlReport -Title $title -Filename $filepath -OpenFile  -Content {
 
     $compdetails | ConvertTo-HtmlReportList -Title 'General' -Property $compprops -Indent $indentationStyle -PrefixGroupNames -Collapsible -Expanded
-    $Services | ConvertTo-HtmlReportList -Title $subtitle -Property $properties -GroupBy $groupByProperties -Indent $indentationStyle.ToString().Replace(' ', '') -PrefixGroupNames:$prefixGroupNames -Collapsible -Expanded
+    $Services | ConvertTo-HtmlReportList -Title 'Services List' -Property 'Name', 'DisplayName' -GroupBy $svcgroupByProperties -Indent $indentationStyle -PrefixGroupNames -Collapsible -Expanded
     $Services | ConvertTo-HtmlReportTable -Title 'Services' -Property $svcProperties -GroupBy $svcgroupByProperties -Indent $indentationStyle -PrefixGroupNames -Collapsible -Expanded
    
 } 
