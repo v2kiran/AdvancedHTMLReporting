@@ -42,3 +42,7 @@ New-HtmlReport -Title $title -Filename $filepath -OpenFile  -Content {
 
 }
 ```
+
+## Result
+
+![Result](https://v2kiran.github.com/images/yaktocat.png)
