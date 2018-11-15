@@ -45,4 +45,4 @@ New-HtmlReport -Title $title -Filename $filepath -OpenFile  -Content {
 
 ## Result
 
-![Result](https://v2kiran.github.com/images/yaktocat.png)
+![Result](https://github.com/v2kiran/AdvancedHTMLReporting/blob/master/sample.png)
